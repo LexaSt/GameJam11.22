@@ -1,24 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.UI;
 
 public class KeanuThrow : MonoBehaviour
 {
     public GameObject BulletPref;
-    [SerializeField] int _forceThrow = 10;
+    [SerializeField] int _forceThrow=10;
     [SerializeField] Transform BulletMaker;
     public float ChangeForce;
     public ActionAnim ActionAnim;
     public Text ForceThrow;
     public GameObject Hint;
     private int _AddForce;
-    [SerializeField] PostProcessVolume _postProcessing;
     private void Update()
     {
         ChangeForceMOde();
-        ForceThrow.text = "Сила броска голодного Киану: " + (_AddForce + _forceThrow).ToString();
+        ForceThrow.text ="Сила броска голодного Киану: " + (_AddForce +_forceThrow).ToString();
         //Debug.Log(Time.timeScale);
     }
 
@@ -29,13 +27,13 @@ public class KeanuThrow : MonoBehaviour
         {
             newBullet.GetComponent<Renderer>().material.color = Color.red;
         }
-        else
+        else 
         {
             newBullet.GetComponent<Renderer>().material.color = Color.blue;
         }
-
+        
         newBullet.GetComponent<Rigidbody>().AddForce(newBullet.transform.forward * (_forceThrow + _AddForce), ForceMode.Impulse);
-
+        
         Destroy(newBullet, 5f);
         _AddForce = 0;
     }
@@ -43,16 +41,14 @@ public class KeanuThrow : MonoBehaviour
     {
         if (Time.timeScale <= 0.5f)
         {
-            _postProcessing.enabled = true;
             Hint.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(1))
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(1)) 
             {
                 _AddForce += 6;
             }
         }
         else
         {
-            _postProcessing.enabled = false;
             Hint.SetActive(false);
         }
     }

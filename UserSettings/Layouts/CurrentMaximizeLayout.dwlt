@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 8675
+  controlID: 9102
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 8676
+  controlID: 9103
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 8677
+  controlID: 9104
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -303,7 +303,7 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 1
+      displayed: 0
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -614,7 +614,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 8645
+  controlID: 9125
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -682,21 +682,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Script/Keanu
+    - Assets/Prefab
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 42
   m_LastFolders:
-  - Assets/Script/Keanu
+  - Assets/Prefab
   m_LastFoldersGridSize: 42
   m_LastProjectPath: C:\mygames\GameJamLexa
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 122.20001}
-    m_SelectedIDs: dcb50000
-    m_LastClickedID: 46556
+    m_SelectedIDs: a8560000
+    m_LastClickedID: 22184
     m_ExpandedIDs: 00000000725600007456000076560000ac560000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -750,9 +750,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: b4b40000
-    m_LastClickedInstanceID: 46260
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 964f0000
+    m_LastClickedInstanceID: 20374
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -777,7 +777,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 37.600006}
+    m_ScrollPosition: {x: 0, y: 4.200012}
     m_GridSize: 42
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 156.6
@@ -837,9 +837,9 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 60}
-      m_SelectedIDs: b4b40000
-      m_LastClickedID: 46260
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 964f0000
+      m_LastClickedID: 0
       m_ExpandedIDs: 4e43ffffd043ffffdc47ffff3248ffff7455ffff0263ffff6063ffff3867ffff9e67ffffe473ffff0288ffff2088ffff1cf9ffff0efaffff2efbffff32fbffffc25e000096670000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
