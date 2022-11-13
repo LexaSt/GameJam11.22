@@ -739,6 +739,10 @@
       <Project>{B238E84C-8D06-83F6-D297-D3934E0B983D}</Project>
       <Name>Unity.Services.Core.Analytics</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
+      <Project>{FF2E0D9D-F959-EED4-9BEF-AC73DFE81496}</Project>
+      <Name>Unity.Postprocessing.Runtime</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{2878A019-25AA-8EA0-CE25-B51C1F345586}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
@@ -763,6 +767,14 @@
       <Project>{CD3F9F6F-C09E-1223-EBFC-37AEDE3BB139}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
+      <Project>{711854CB-35F1-DF11-8FEB-C37A59C4AAB3}</Project>
+      <Name>Unity.2D.Sprite.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Postprocessing.Editor.csproj">
+      <Project>{1AAC31AC-EDF5-CD20-777D-171376863C7A}</Project>
+      <Name>Unity.Postprocessing.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{01F5FFC7-3FFD-89DA-45CF-EEC04B5B2518}</Project>
       <Name>UnityEditor.UI</Name>
@@ -782,18 +794,6 @@
     <ProjectReference Include="Unity.Services.Core.csproj">
       <Project>{11038519-91FB-C1B2-EECA-892B6DA0A43B}</Project>
       <Name>Unity.Services.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Postprocessing.Editor.csproj">
-      <Project>{1AAC31AC-EDF5-CD20-777D-171376863C7A}</Project>
-      <Name>Unity.Postprocessing.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
-      <Project>{FF2E0D9D-F959-EED4-9BEF-AC73DFE81496}</Project>
-      <Name>Unity.Postprocessing.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
-      <Project>{711854CB-35F1-DF11-8FEB-C37A59C4AAB3}</Project>
-      <Name>Unity.2D.Sprite.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
