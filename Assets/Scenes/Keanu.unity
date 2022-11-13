@@ -8188,6 +8188,7 @@ MonoBehaviour:
   ActionAnim: {fileID: 0}
   ForceThrow: {fileID: 706222468}
   Hint: {fileID: 1262921981}
+  _postProcessing: {fileID: 1014713607}
 --- !u!114 &2109120860
 MonoBehaviour:
   m_ObjectHideFlags: 0
