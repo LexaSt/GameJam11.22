@@ -62,4 +62,9 @@ public class SpawnManager : MonoBehaviour
 
         }
     }
+    private void OnDestroy()
+    {
+        ActionEventGoneDove.EventOnDoveGone -= ValueDovesStay;
+        ActionEventGoneDove.EventOnDoveGone -= DeleteDoveFromList;
+    }
 }

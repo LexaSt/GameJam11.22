@@ -26,7 +26,7 @@ public class Spawn : MonoBehaviour
     {
         Enemy newEnemy = Instantiate(enemy);
         newEnemy.Initialization(Random.Range(_maxSpeed, _minSpeed), Random.Range(_maxHealth, _minHealth));
-        newEnemy.Spawn(transform.position);    
+        newEnemy.Spawn(transform.position);
     }
     public void DeleteFromList()
     {

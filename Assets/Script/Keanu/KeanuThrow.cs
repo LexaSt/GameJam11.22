@@ -13,11 +13,13 @@ public class KeanuThrow : MonoBehaviour
     public Text ForceThrow;
     public GameObject Hint;
     private int _AddForce;
+    //private BulletTime _bulletTime;
     private void Update()
     {
         ChangeForceMOde();
         ForceThrow.text ="Сила броска голодного Киану: " + (_AddForce +_forceThrow).ToString();
         //Debug.Log(Time.timeScale);
+       // _bulletTime = FindObjectOfType<BulletTime>();
     }
 
     private void Shooting()
@@ -39,7 +41,7 @@ public class KeanuThrow : MonoBehaviour
     }
     void ChangeForceMOde()
     {
-        if (Time.timeScale <= 0.5f)
+        if (Time.timeScale ==0.2f)
         {
             Hint.SetActive(true);
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(1)) 

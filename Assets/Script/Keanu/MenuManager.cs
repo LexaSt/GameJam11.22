@@ -3,58 +3,47 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartMenuManager : MonoBehaviour
+public class MenuManager : MonoBehaviour
 {
 
     [SerializeField] private GameObject Menu;
-    [SerializeField] private GameObject ButtonPause;
+      
+    public BulletTime BulletTime;
 
-    [SerializeField] private AudioSource MusicInGame;
 
-    [SerializeField] List<MonoBehaviour> ScriptList = new List<MonoBehaviour>();
-   public void MenuActivated()
+    private void Update()
     {
-        foreach (MonoBehaviour script in ScriptList)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            script.enabled = false;
+            MenuActivated();    
         }
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            MenuDeactivated();
+        }
+    }
+    public void MenuActivated()
+    {
+        Cursor.lockState = CursorLockMode.Confined;
+        BulletTime.gameObject.SetActive(false);
+ 
         Menu.SetActive(true);
         
-        Time.timeScale = 0.02f;
+        Time.timeScale = 0f;
     }
 
     public void MenuDeactivated()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        BulletTime.gameObject.SetActive(true);
         Menu.SetActive(false);
-        ButtonPause.SetActive(true);
-        foreach (MonoBehaviour script in ScriptList)
-        {
-            script.enabled = true;
-        }
+
         Time.timeScale = 1f;
     }
 
-    public void MusicOff(bool value)
-    {
-        if (value == false)
-        {
-            MusicInGame.Pause();
-        }
-        else
-        {
-            MusicInGame.Play();
-
-        }
-        
-    }
-
-    public void MusicVolume(float Value)
-    {
-        AudioListener.volume = Value;
-    }
 
     public void Restart()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }

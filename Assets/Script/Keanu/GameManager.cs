@@ -8,15 +8,24 @@ public class GameManager : MonoBehaviour
 
     public GameObject WinImage;
     public GameObject FallImage;
+    public BulletTime BulletTime;
+
+    private void Start()
+    {
+       // BulletTime = FindObjectOfType<BulletTime>();
+    }
+
     public void GameOverWin()
     {
-        Time.timeScale = 0.1f;
+        BulletTime.gameObject.SetActive(false);
+        Time.timeScale = 0f;
         WinImage.SetActive(true);
     }
 
     public void GameOverFall()
     {
-        Time.timeScale = 0.1f;
+         BulletTime.gameObject.SetActive(false);
+        Time.timeScale = 0f;
         FallImage.SetActive(true);
     }
 }
